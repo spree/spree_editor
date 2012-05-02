@@ -27,9 +27,11 @@ This extension provides an inline rich-text editor for Spree. It implements diff
 
 # Language-Support #
 To obtain support for multiple languages with TinyMCE add tinymce-rails-langs to your Gemfile:
+
     `gem 'tinymce-rails-langs'`
 
 TinyMCE will not be loaded unless it finds a language package matching your `Spree::Config.default_locale`.
+
 
 *NOTE:* currently YUI Rich Editor is not yet 3.1 asset ready.
 The only editors currently working on Spree 0.70.x are WYMEditor and TinyMCE.
