@@ -8,6 +8,8 @@ This extension provides an inline rich-text editor for Spree. It implements diff
 - [WYM Editor](http://www.wymeditor.org/)
 - [TinyMCE](http://www.tinymce.com/)
 - [YUI Rich Editor](http://developer.yahoo.com/yui/editor/) (N.B. not currently available in Spree 0.70.x and newer)
+- [CKEditor](http://ckeditor.com/)
+
 
 # Installation #
 
@@ -16,6 +18,8 @@ This extension provides an inline rich-text editor for Spree. It implements diff
     `gem 'spree_editor', :github => "spree/spree_editor"`
     
     `gem 'tinymce-rails', '>= 3.4.7.0.1'`
+
+    `gem 'ckeditor', '~> 4.0.2'`
 
 2. Install the gem:
 
