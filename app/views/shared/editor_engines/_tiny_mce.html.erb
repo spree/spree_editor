@@ -1,6 +1,10 @@
 <script type="text/javascript">
   $(function() {
-    var myConfig = { dompath: true };
-    tinyMCE.init(<%= raw TinyMCE::Rails.configuration.options.merge({ :elements => ids.join(',') }).to_json %>);
-  });
+    var myConfig = { dompath: true  };
+    tinyMCE.init(<%= raw TinyMCE::Rails.configuration.options.merge({ :elements => ids.join(',') }).to_json %>);  });
+ 
+$(document).ready(function() {
+	$("#<%= ids.join(',#').to_s %>").addClass('tinymce');
+});
+ 
 </script>
