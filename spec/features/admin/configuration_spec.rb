@@ -41,7 +41,7 @@ feature "Rich Editor Settings", js: true do
       select 'TinyMCE', from: 'current_editor'
       click_button "Update"
       visit spree.edit_admin_product_path(product)
-      page.should have_css('.mceEditor')
+      page.should have_css('.mce-tinymce')
     end
 
   end
