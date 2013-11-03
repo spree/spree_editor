@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency('tinymce-rails', '>= 3.4.7.0.1')
+  s.add_dependency('tinymce-rails', '>= 4.0')
   s.add_dependency('ckeditor', '~> 4.0.2')
   s.add_dependency('spree_core', '>= 1.0.0')
 
