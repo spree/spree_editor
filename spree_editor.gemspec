@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_editor'
-  s.version     = '2.2.0'
+  s.version     = '2.2.1'
   s.summary     = 'Adds support for WYSIWYG editors to Spree'
   s.description = 'Currently supported editors are CKEditor and TinyMCE'
   s.required_ruby_version = '>= 1.9.3'
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'ckeditor', '4.0.11'
+  s.add_dependency 'ckeditor', '4.1.0'
   s.add_dependency 'spree_backend', '~> 2.2.0'
   s.add_dependency 'tinymce-rails', '~> 3.5.8.3'
 
