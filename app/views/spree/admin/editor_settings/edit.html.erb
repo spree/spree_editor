@@ -14,7 +14,7 @@
               <%= label_tag(:current_editor, Spree.t(:rich_editor_engine)) %>
               <%= select_tag(:current_editor, options_for_select(Spree::EditorSetting.editors, SpreeEditor::Config[:current_editor]), class: 'select2') %>
             </div>
-            <div class="checkbox">
+            <div class="checkbox form-group">
               <%= label_tag(:enabled) do %>
                 <%= preference_field_tag(:enabled, SpreeEditor::Config[:enabled], type: :boolean) %>
                 <%= Spree.t(:enable_rich_editor) %>
