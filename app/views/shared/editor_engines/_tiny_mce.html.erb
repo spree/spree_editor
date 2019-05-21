@@ -8,7 +8,7 @@
 
   $(document).ready(function () {
     $('<%= raw ids.each.map{|id| "textarea##{id}" }.join(", ") %>').tinymce(
-      <%= raw TinyMCE::Rails.configuration[:defaults].options.to_json %>);
+      <%= raw TinyMCE::Rails.configuration[:default].options.to_json %>);
   });
 </script>
 
