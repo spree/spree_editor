@@ -2,15 +2,12 @@
 
 <script>
   $(function () {
-    /* Inject each textarea id with .tinymce class required for TinyMCE 4 */
+    /* Inject each textarea id with .tinymce class required for TinyMCE 5 */
     $('<%= raw ids.each.map{|id| "textarea##{id}" }.join(", ") %>').addClass('tinymce');
   });
-
-  $(document).ready(function () {
-    $('<%= raw ids.each.map{|id| "textarea##{id}" }.join(", ") %>').tinymce(
-      <%= raw TinyMCE::Rails.configuration[:default].options.to_json %>);
-  });
 </script>
+
+<%= tinymce %>
 
 <style type="text/css">
   /* Reset TinyMCE menu styles */
