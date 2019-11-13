@@ -1,0 +1,9 @@
+---
+fr:
+  spree:
+    enable_rich_editor: Activer le texte enrichi
+    rich_editor: Texte enrichi
+    rich_editor_description: Paramétrage du texte enrichi
+    rich_editor_engine: Moteur du texte enrichi
+    rich_editor_ids: Identifiants du texte enrichi
+    rich_editor_ids_description: "Lister les identifiants du champ texte, séparés par des espaces"
