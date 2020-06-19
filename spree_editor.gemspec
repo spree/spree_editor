@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_extension'
   s.add_dependency 'ckeditor', '~> 5.0.0'
   s.add_dependency 'tinymce-rails', '~> 4.2.5'
+  s.add_dependency 'trix'
   s.add_runtime_dependency 'deface', '~> 1.0'
 
   s.add_development_dependency 'i18n-spec', '>= 0.5.0'
@@ -42,7 +43,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails', '~> 4.0.0.beta2'
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'pg'
-  s.add_development_dependency 'mysql2'
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'appraisal'
   s.add_development_dependency 'puma'
