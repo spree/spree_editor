@@ -1,0 +1,14 @@
+<%= javascript_include_tag 'trix/trix' %>
+<%= stylesheet_link_tag 'trix/trix' %>
+
+<script>
+  $(document).ready(function () {
+    let editors = $('<%= raw ids.each.map{|id| "textarea##{id}" }.join(", ") %>');
+    for (const editor of editors) {
+      let trixEditor = document.createElement('trix-editor');
+      trixEditor.setAttribute('input', editor.id);
+      $(editor).hide();
+      $(trixEditor).insertAfter(editor);
+    }
+  });
+</script>
