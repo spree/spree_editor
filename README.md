@@ -1,3 +1,7 @@
+# ⚠️ Deprecation notice ⚠️
+
+Since Spree 4.3 this extension is deprecated and not needed. Spree 4.3 includes a TinyMCE-based WYSIWYG editor built-in.
+
 # Spree Editor
 
 [![Build Status](https://travis-ci.org/spree-contrib/spree_editor.svg?branch=master)](https://travis-ci.org/spree-contrib/spree_editor)
