@@ -47,7 +47,7 @@ If you have issues, please check their issues trackers first.
 
 4. If using CKEditor, and would like to enable file uploads run the ckeditor generator:
   ```sh
-  $ rails g ckeditor:install --orm=active_record --backend=paperclip && rake db:migrate
+  $ bundle exec rails g ckeditor:install --orm=active_record --backend=paperclip && bundle exec rake db:migrate
   ```
 
 5. In order to secure your file uploads to only be accessed by admins you will also need to configure config/initializers/ckeditor.rb:
