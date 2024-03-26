@@ -25,8 +25,10 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'spree_backend', spree_version
   s.add_dependency 'spree_extension'
-  s.add_dependency 'ckeditor',      '~> 4.2.0'
+  s.add_dependency 'ckeditor', '~> 5.0.0'
   s.add_dependency 'tinymce-rails', '~> 4.2.5'
+  s.add_dependency 'coffee-rails'
+  s.add_runtime_dependency 'deface', '~> 1.0'
 
   s.add_development_dependency 'i18n-spec', '>= 0.5.0'
   s.add_development_dependency 'guard-rspec'
@@ -38,11 +40,10 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'selenium-webdriver'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'rspec-rails', '~> 4.0.0.beta2'
   s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'pg', '~> 0.18'
+  s.add_development_dependency 'pg'
   s.add_development_dependency 'mysql2'
-  s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'appraisal'
   s.add_development_dependency 'puma'
 end

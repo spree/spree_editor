@@ -16,6 +16,14 @@ if Object.const_defined?('Ckeditor')
     # config.attachment_file_types = %w(doc docx xls odt ods pdf rar zip tar swf)
 
     # Setup authorization to be run as a before filter
-    config.authorize_with :cancan, Spree::Ability
+    config.authorize_with :cancancan, Spree::Ability
+
+    # Asset model classes
+    config.picture_model { Ckeditor::Picture }
+    config.attachment_file_model { Ckeditor::AttachmentFile }
+
+    # //cdn.ckeditor.com/<version.number>/<distribution>/ckeditor.js | distributions
+    # available here: https://ckeditor.com/cke4/presets-all
+    config.cdn_url = '//cdn.ckeditor.com/4.11.3/standard/ckeditor.js'
   end
 end
